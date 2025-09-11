@@ -1,0 +1,30 @@
+{
+  "name": "Search Resource",
+  "request": {
+    "type": "http",
+    "url": "{{CLOUDINARY_BASE_URL}}/{{CLOUDINARY_CLOUD_NAME}}/resources/search",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [],
+    "body": "{\n  \"expression\": \"resource_type:image\",\n  \"sort_by\": [{\"created_at\": \"desc\"}],\n  \"max_results\": 3\n}",
+    "bodyContainer": {
+      "text": "{\n  \"expression\": \"resource_type:image\",\n  \"sort_by\": [{\"created_at\": \"desc\"}],\n  \"max_results\": 3\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "BASIC_AUTH",
+      "authConfigStore": {
+        "BASIC_AUTH": {
+          "username": "{{CLOUDINARY_API_KEY}}",
+          "password": "{{CLOUDINARY_API_SECRET}}"
+        }
+      }
+    }
+  }
+}

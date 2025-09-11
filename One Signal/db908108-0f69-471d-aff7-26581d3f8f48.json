@@ -1,0 +1,38 @@
+{
+  "name": "Create User",
+  "request": {
+    "type": "http",
+    "url": "{{ONESIGNAL_BASE_URL}}/apps/{{ONESIGNAL_APP_ID}}/users",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757515576222,
+        "key": "Authorization",
+        "value": "Basic {{ONESIGNAL_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757515590993,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"identity\": {\n    \"external_id\": \"{{USER_EXTERNAL_ID}}\"\n  },\n  \"properties\": {\n    \"language\": \"en\"\n  },\n  \"subscriptions\": [\n    {\n      \"type\": \"AndroidPush\", \n      \"token\": \"test_android_token_123\",\n      \"enabled\": true\n    }\n  ]\n}",
+    "bodyContainer": {
+      "text": "{\n  \"identity\": {\n    \"external_id\": \"{{USER_EXTERNAL_ID}}\"\n  },\n  \"properties\": {\n    \"language\": \"en\"\n  },\n  \"subscriptions\": [\n    {\n      \"type\": \"AndroidPush\", \n      \"token\": \"test_android_token_123\",\n      \"enabled\": true\n    }\n  ]\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

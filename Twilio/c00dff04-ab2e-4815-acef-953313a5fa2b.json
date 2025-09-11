@@ -1,0 +1,49 @@
+{
+  "name": "Check Message Status",
+  "request": {
+    "type": "http",
+    "url": "{{TWILIO_BASE_URL}}/Accounts/{{TWILIO_ACCOUNT_SID}}/Messages/{{MESSAGE_SID}}.json",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [],
+    "headers": [],
+    "body": null,
+    "bodyContainer": {
+      "text": "",
+      "form": [
+        {
+          "id": 1757530897882,
+          "key": "From",
+          "value": "{{TWILIO_PHONE_NUMBER}}",
+          "isEnabled": true
+        },
+        {
+          "id": 1757530913634,
+          "key": "To",
+          "value": "{{TO_PHONE_NUMBER}}",
+          "isEnabled": true
+        },
+        {
+          "id": 1757530920616,
+          "key": "Body",
+          "value": "{{SMS_MESSAGE}}",
+          "isEnabled": true
+        }
+      ],
+      "multipartForm": []
+    },
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "BASIC_AUTH",
+      "authConfigStore": {
+        "BASIC_AUTH": {
+          "username": "{{TWILIO_ACCOUNT_SID}}",
+          "password": "{{TWILIO_AUTH_TOKEN}}"
+        }
+      }
+    }
+  }
+}

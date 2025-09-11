@@ -1,0 +1,26 @@
+{
+  "INSTATUS_API_KEY": {
+    "value": "YOUR_API_KEY",
+    "type": "string",
+    "id": 0,
+    "isSecret": false
+  },
+  "INSTATUS_BASE_URL": {
+    "value": "https://api.instatus.com",
+    "type": "string",
+    "id": 1,
+    "isSecret": false
+  },
+  "PAGE_ID": {
+    "value": "YOUR_PAGE_ID",
+    "type": "string",
+    "id": 2,
+    "isSecret": false
+  },
+  "INCIDENT_ID": {
+    "value": "INCIDENT_ID",
+    "type": "string",
+    "id": 3,
+    "isSecret": false
+  }
+}

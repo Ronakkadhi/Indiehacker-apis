@@ -1,0 +1,20 @@
+{
+  "APPLICATION_ID": {
+    "value": "YOUR_APPLICATION_ID",
+    "type": "string",
+    "id": 0,
+    "isSecret": false
+  },
+  "ALGOLIA_API_KEY": {
+    "value": "YOUR_SEARCH_API_KEY",
+    "type": "string",
+    "id": 1,
+    "isSecret": false
+  },
+  "ALGOLIA_INDEX_NAME": {
+    "value": "YOUR_ALGOLIA_INDEX_NAME",
+    "type": "string",
+    "id": 2,
+    "isSecret": false
+  }
+}

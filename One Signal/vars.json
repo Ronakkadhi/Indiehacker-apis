@@ -1,0 +1,26 @@
+{
+  "ONESIGNAL_APP_ID": {
+    "value": "YOUR_APP_ID",
+    "type": "string",
+    "id": 0,
+    "isSecret": false
+  },
+  "ONESIGNAL_API_KEY": {
+    "value": "YOUR_API_KEY",
+    "type": "string",
+    "id": 1,
+    "isSecret": false
+  },
+  "ONESIGNAL_BASE_URL": {
+    "value": "https://api.onesignal.com",
+    "type": "string",
+    "id": 2,
+    "isSecret": false
+  },
+  "USER_EXTERNAL_ID": {
+    "value": "push-user-456",
+    "type": "string",
+    "id": 3,
+    "isSecret": false
+  }
+}

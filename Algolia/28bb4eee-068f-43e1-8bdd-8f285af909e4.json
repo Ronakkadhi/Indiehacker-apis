@@ -1,0 +1,50 @@
+{
+  "name": "Add Record",
+  "request": {
+    "type": "http",
+    "url": "https://{{APPLICATION_ID}}.algolia.net/1/indexes/{{ALGOLIA_INDEX_NAME}}",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "key": "accept",
+        "value": "application/json",
+        "id": 0.12508737877386933,
+        "isEnabled": true
+      },
+      {
+        "key": "content-type",
+        "value": "application/json",
+        "id": 0.8483399415116617,
+        "isEnabled": true
+      },
+      {
+        "key": "x-algolia-api-key",
+        "value": "{{ALGOLIA_API_KEY}}",
+        "id": 0.6954131476515195,
+        "isEnabled": true
+      },
+      {
+        "key": "x-algolia-application-id",
+        "value": "{{APPLICATION_ID}}",
+        "id": 0.9139025820766615,
+        "isEnabled": true
+      }
+    ],
+    "body": "{ \n  \"objectID\": \"New-Test-Movie\", \n  \"name\": \"TEST MOVIE\", \n}\n",
+    "bodyContainer": {
+      "text": "{ \n  \"objectID\": \"New-Test-Movie\", \n  \"name\": \"TEST MOVIE\", \n}\n",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Create Status Page",
+  "request": {
+    "type": "http",
+    "url": "{{INSTATUS_BASE_URL}}/v1/pages",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757513548022,
+        "key": "Authorization",
+        "value": "Bearer {{INSTATUS_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757513578898,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"email\": \"YOUR_EMAIL\"\n  \"name\": \"NEW_PAGE_NAME\",\n  \"subdomain\": \"page1\"\n}",
+    "bodyContainer": {
+      "text": "{\n  \"email\": \"YOUR_EMAIL\"\n  \"name\": \"NEW_PAGE_NAME\",\n  \"subdomain\": \"page1\"\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

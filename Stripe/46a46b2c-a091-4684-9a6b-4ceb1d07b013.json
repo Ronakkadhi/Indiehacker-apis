@@ -1,0 +1,76 @@
+{
+  "name": "Create Customer",
+  "request": {
+    "type": "http",
+    "url": "{{STRIPE_BASE_URL}}/customers",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757439640015,
+        "key": "Authorization",
+        "value": "Bearer {{STRIPE_SECRET_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757439678793,
+        "key": "Content-Type",
+        "value": "application/x-www-form-urlencoded",
+        "isEnabled": true
+      }
+    ],
+    "body": [
+      {
+        "id": 1757439704088,
+        "key": "email",
+        "value": "{{CUSTOMER_EMAIL}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757439714610,
+        "key": "description",
+        "value": "Test customer from API collection",
+        "isEnabled": true
+      },
+      {
+        "id": 1757439831745,
+        "key": "name",
+        "value": "Test Name",
+        "isEnabled": true
+      }
+    ],
+    "bodyContainer": {
+      "text": "",
+      "form": [
+        {
+          "id": 1757439704088,
+          "key": "email",
+          "value": "{{CUSTOMER_EMAIL}}",
+          "isEnabled": true
+        },
+        {
+          "id": 1757439714610,
+          "key": "description",
+          "value": "Test customer from API collection",
+          "isEnabled": true
+        },
+        {
+          "id": 1757439831745,
+          "key": "name",
+          "value": "Test Name",
+          "isEnabled": true
+        }
+      ],
+      "multipartForm": []
+    },
+    "contentType": "application/x-www-form-urlencoded",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

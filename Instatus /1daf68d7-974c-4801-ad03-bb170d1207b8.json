@@ -1,0 +1,33 @@
+{
+  "name": "Get Page",
+  "request": {
+    "type": "http",
+    "url": "{{INSTATUS_BASE_URL}}/v2/pages",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757512049813,
+        "key": "Authorization",
+        "value": "Bearer {{INSTATUS_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757512069255,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "name": "Upload File (Signed)",
+  "request": {
+    "type": "http",
+    "url": "{{CLOUDINARY_BASE_URL}}/{{CLOUDINARY_CLOUD_NAME}}/image/upload",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757443528616,
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "isEnabled": true
+      }
+    ],
+    "body": [
+      {
+        "id": 1757443539903,
+        "key": "file",
+        "value": [
+          {
+            "id": "Test.png-1757443765745",
+            "name": "Test.png",
+            "path": "/Users/ronakkadhi/Desktop/Test.png",
+            "size": 335867,
+            "source": "desktop"
+          }
+        ],
+        "isEnabled": true,
+        "type": "file"
+      },
+      {
+        "id": 1757443545468,
+        "key": "public_id",
+        "value": "{{PUBLIC_ID}}",
+        "isEnabled": true,
+        "type": "text"
+      },
+      {
+        "id": 1757443567191,
+        "key": "api_key",
+        "value": "{{CLOUDINARY_API_KEY}}",
+        "isEnabled": true,
+        "type": "text"
+      },
+      {
+        "id": 1757443591743,
+        "key": "timestamp",
+        "value": "{{TIMESTAMP}}",
+        "isEnabled": true,
+        "type": "text"
+      },
+      {
+        "id": 1757443604142,
+        "key": "signature",
+        "value": "{{FILE_SIGNATURE}}",
+        "isEnabled": true,
+        "type": "text"
+      }
+    ],
+    "bodyContainer": {
+      "text": "",
+      "form": [],
+      "multipartForm": [
+        {
+          "id": 1757443539903,
+          "key": "file",
+          "value": [
+            {
+              "id": "Test.png-1757443765745",
+              "name": "Test.png",
+              "path": "/Users/ronakkadhi/Desktop/Test.png",
+              "size": 335867,
+              "source": "desktop"
+            }
+          ],
+          "isEnabled": true,
+          "type": "file"
+        },
+        {
+          "id": 1757443545468,
+          "key": "public_id",
+          "value": "{{PUBLIC_ID}}",
+          "isEnabled": true,
+          "type": "text"
+        },
+        {
+          "id": 1757443567191,
+          "key": "api_key",
+          "value": "{{CLOUDINARY_API_KEY}}",
+          "isEnabled": true,
+          "type": "text"
+        },
+        {
+          "id": 1757443591743,
+          "key": "timestamp",
+          "value": "{{TIMESTAMP}}",
+          "isEnabled": true,
+          "type": "text"
+        },
+        {
+          "id": 1757443604142,
+          "key": "signature",
+          "value": "{{FILE_SIGNATURE}}",
+          "isEnabled": true,
+          "type": "text"
+        }
+      ]
+    },
+    "contentType": "multipart/form-data",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

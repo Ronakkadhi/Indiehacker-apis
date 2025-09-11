@@ -1,0 +1,38 @@
+{
+  "name": "Subscribe User",
+  "request": {
+    "type": "http",
+    "url": "{{ONESIGNAL_BASE_URL}}/apps/{{ONESIGNAL_APP_ID}}/users/by/external_id/{{USER_EXTERNAL_ID}}/subscriptions",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757515576222,
+        "key": "Authorization",
+        "value": "Basic {{ONESIGNAL_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757515590993,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"subscription\": {\n    \"type\": \"AndroidPush\",\n    \"token\": \"fake-android-push-token-12345\",\n    \"enabled\": true\n  }\n}",
+    "bodyContainer": {
+      "text": "{\n  \"subscription\": {\n    \"type\": \"AndroidPush\",\n    \"token\": \"fake-android-push-token-12345\",\n    \"enabled\": true\n  }\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

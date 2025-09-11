@@ -1,0 +1,38 @@
+{
+  "name": "Create Contact",
+  "request": {
+    "type": "http",
+    "url": "{{BASE_URL}}/audiences/{{NEW_AUDIENCE_ID}}/contacts",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "key": "Authorization",
+        "value": "Bearer {{API_KEY}}",
+        "id": 0.6254270488843974,
+        "isEnabled": true
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json",
+        "id": 0.18163425924139687,
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"email\": \"steve.wozniak@gmail.com\",\n  \"first_name\": \"Steve\",\n  \"last_name\": \"Wozniak\",\n  \"unsubscribed\": false\n}\n",
+    "bodyContainer": {
+      "text": "{\n  \"email\": \"steve.wozniak@gmail.com\",\n  \"first_name\": \"Steve\",\n  \"last_name\": \"Wozniak\",\n  \"unsubscribed\": false\n}\n",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

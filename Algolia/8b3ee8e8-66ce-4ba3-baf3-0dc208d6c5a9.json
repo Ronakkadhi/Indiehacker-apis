@@ -1,0 +1,52 @@
+{
+  "name": "List Indices",
+  "request": {
+    "type": "http",
+    "url": "https://{{APPLICATION_ID}}.algolia.net/1/indexes",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [
+      {
+        "id": 0.19949725843417898,
+        "key": "page",
+        "value": "0",
+        "isEnabled": true
+      },
+      {
+        "id": 0.3313958966171813,
+        "key": "hitsPerPage",
+        "value": "100",
+        "isEnabled": true
+      }
+    ],
+    "headers": [
+      {
+        "key": "accept",
+        "value": "application/json",
+        "id": 0.03201219018067247,
+        "isEnabled": true
+      },
+      {
+        "key": "x-algolia-api-key",
+        "value": "{{ALGOLIA_API_KEY}}",
+        "id": 0.5450523943596421,
+        "isEnabled": true
+      },
+      {
+        "key": "x-algolia-application-id",
+        "value": "{{APPLICATION_ID}}",
+        "id": 0.09118933457841982,
+        "isEnabled": true
+      }
+    ],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

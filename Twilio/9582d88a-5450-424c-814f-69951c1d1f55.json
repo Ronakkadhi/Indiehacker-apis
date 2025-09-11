@@ -1,0 +1,25 @@
+{
+  "name": "Get Account Balance",
+  "request": {
+    "type": "http",
+    "url": "{{TWILIO_BASE_URL}}/Accounts/{{TWILIO_ACCOUNT_SID}}/Balance.json",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [],
+    "headers": [],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "BASIC_AUTH",
+      "authConfigStore": {
+        "BASIC_AUTH": {
+          "username": "{{TWILIO_ACCOUNT_SID}}",
+          "password": "{{TWILIO_AUTH_TOKEN}}"
+        }
+      }
+    }
+  }
+}

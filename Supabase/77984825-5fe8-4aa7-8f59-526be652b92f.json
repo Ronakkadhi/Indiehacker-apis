@@ -1,0 +1,38 @@
+{
+  "name": "Signup user",
+  "request": {
+    "type": "http",
+    "url": "{{SUPABASE_URL}}/auth/v1/signup",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757419879250,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      },
+      {
+        "id": 1757419895438,
+        "key": "apikey",
+        "value": "{{SUPABASE_ANON_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"email\": \"{{USER_EMAIL}}\",\n  \"password\": \"{{USER_PASSWORD}}\"\n}",
+    "bodyContainer": {
+      "text": "{\n  \"email\": \"{{USER_EMAIL}}\",\n  \"password\": \"{{USER_PASSWORD}}\"\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

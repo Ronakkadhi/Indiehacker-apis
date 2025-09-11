@@ -1,0 +1,75 @@
+{
+  "name": "Send SMS",
+  "request": {
+    "type": "http",
+    "url": "{{TWILIO_BASE_URL}}/Accounts/{{TWILIO_ACCOUNT_SID}}/Messages.json",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757530856211,
+        "key": "Content-Type",
+        "value": "application/x-www-form-urlencoded",
+        "isEnabled": true
+      }
+    ],
+    "body": [
+      {
+        "id": 1757530897882,
+        "key": "From",
+        "value": "{{TWILIO_PHONE_NUMBER}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757530913634,
+        "key": "To",
+        "value": "{{TO_PHONE_NUMBER}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757530920616,
+        "key": "Body",
+        "value": "{{SMS_MESSAGE}}",
+        "isEnabled": true
+      }
+    ],
+    "bodyContainer": {
+      "text": "",
+      "form": [
+        {
+          "id": 1757530897882,
+          "key": "From",
+          "value": "{{TWILIO_PHONE_NUMBER}}",
+          "isEnabled": true
+        },
+        {
+          "id": 1757530913634,
+          "key": "To",
+          "value": "{{TO_PHONE_NUMBER}}",
+          "isEnabled": true
+        },
+        {
+          "id": 1757530920616,
+          "key": "Body",
+          "value": "{{SMS_MESSAGE}}",
+          "isEnabled": true
+        }
+      ],
+      "multipartForm": []
+    },
+    "contentType": "application/x-www-form-urlencoded",
+    "auth": {
+      "currentAuthType": "BASIC_AUTH",
+      "authConfigStore": {
+        "BASIC_AUTH": {
+          "username": "{{TWILIO_ACCOUNT_SID}}",
+          "password": "{{TWILIO_AUTH_TOKEN}}"
+        }
+      }
+    }
+  }
+}

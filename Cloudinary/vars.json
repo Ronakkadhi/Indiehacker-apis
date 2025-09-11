@@ -1,0 +1,62 @@
+{
+  "CLOUDINARY_CLOUD_NAME": {
+    "value": "YOUR_CLOUD_NAME",
+    "type": "string",
+    "id": 0,
+    "isSecret": false
+  },
+  "CLOUDINARY_API_KEY": {
+    "value": "YOUR_API_KEY",
+    "type": "string",
+    "id": 1,
+    "isSecret": false
+  },
+  "CLOUDINARY_API_SECRET": {
+    "value": "YOUR_API_SECRET",
+    "type": "string",
+    "id": 2,
+    "isSecret": false
+  },
+  "API_ENVIRONMENT_VARIABLE": {
+    "value": "YOUR_ENV_VARIABLE",
+    "type": "string",
+    "id": 3,
+    "isSecret": false
+  },
+  "CLOUDINARY_BASE_URL": {
+    "value": "https://api.cloudinary.com/v1_1",
+    "type": "string",
+    "id": 4,
+    "isSecret": false
+  },
+  "FILE_SIGNATURE": {
+    "value": "MANUALLY_GENERATED_SIGNATURE",
+    "type": "string",
+    "id": 5,
+    "isSecret": false
+  },
+  "TIMESTAMP": {
+    "value": "1757450000",
+    "type": "string",
+    "id": 6,
+    "isSecret": false
+  },
+  "PUBLIC_ID": {
+    "value": "test-upload",
+    "type": "string",
+    "id": 7,
+    "isSecret": false
+  },
+  "RESOURCE_TYPE": {
+    "value": "image",
+    "type": "string",
+    "id": 8,
+    "isSecret": false
+  },
+  "GENERATE_IMAGE_SIGNATURE": {
+    "value": "MANUALLY_GENERATED_SIGNATURE",
+    "type": "string",
+    "id": 9,
+    "isSecret": false
+  }
+}

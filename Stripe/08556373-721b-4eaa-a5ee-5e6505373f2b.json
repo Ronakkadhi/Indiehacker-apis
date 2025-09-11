@@ -1,0 +1,34 @@
+{
+  "name": "List Payments",
+  "request": {
+    "type": "http",
+    "url": "{{STRIPE_BASE_URL}}/payment_intents",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [
+      {
+        "id": 0.10596878162806744,
+        "key": "limit",
+        "value": "3",
+        "isEnabled": true
+      }
+    ],
+    "headers": [
+      {
+        "id": 1757440488814,
+        "key": "Authorization",
+        "value": "Bearer {{STRIPE_SECRET_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

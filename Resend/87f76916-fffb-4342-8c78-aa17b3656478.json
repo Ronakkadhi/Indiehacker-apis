@@ -1,0 +1,38 @@
+{
+  "name": "Send Email ",
+  "request": {
+    "type": "http",
+    "url": "{{BASE_URL}}/emails",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "key": "Authorization",
+        "value": "Bearer {{API_KEY}}",
+        "id": 0.6586646919122177,
+        "isEnabled": true
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json",
+        "id": 0.09748773382129428,
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"from\": \"Acme <onboarding@resend.dev>\",\n  \"to\": [\"your-email@gmail.com\"],\n  \"subject\": \"hello world\",\n  \"html\": \"<p>it works!</p>\",\n  \"reply_to\": \"onboarding@resend.dev\"\n}\n",
+    "bodyContainer": {
+      "text": "{\n  \"from\": \"Acme <onboarding@resend.dev>\",\n  \"to\": [\"your-email@gmail.com\"],\n  \"subject\": \"hello world\",\n  \"html\": \"<p>it works!</p>\",\n  \"reply_to\": \"onboarding@resend.dev\"\n}\n",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

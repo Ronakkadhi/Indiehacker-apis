@@ -1,0 +1,44 @@
+{
+  "name": "Update User",
+  "request": {
+    "type": "http",
+    "url": "{{SUPABASE_URL}}/auth/v1/user",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "PUT",
+    "queryParams": [],
+    "headers": [
+      {
+        "key": "apikey",
+        "value": "{{SUPABASE_ANON_KEY}}",
+        "id": 0.8705262937721456,
+        "isEnabled": true
+      },
+      {
+        "key": "Authorization",
+        "value": "Bearer {{ACCESS_TOKEN}}",
+        "id": 0.5083405071209044,
+        "isEnabled": true
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json",
+        "id": 0.6957652489178394,
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"email\": \"{{USER_EMAIL}}\",\n  \"password\": \"987654321\",\n  \"data\": { \"key\": \"value\" }\n}\n",
+    "bodyContainer": {
+      "text": "{\n  \"email\": \"{{USER_EMAIL}}\",\n  \"password\": \"987654321\",\n  \"data\": { \"key\": \"value\" }\n}\n",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

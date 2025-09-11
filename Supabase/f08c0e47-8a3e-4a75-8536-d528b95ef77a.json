@@ -1,0 +1,38 @@
+{
+  "name": "Reset Password",
+  "request": {
+    "type": "http",
+    "url": "{{SUPABASE_URL}}/auth/v1/recover",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757421900876,
+        "key": "apikey",
+        "value": "{{SUPABASE_ANON_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757422023178,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"email\": \"{{USER_EMAIL}}\"\n}",
+    "bodyContainer": {
+      "text": "{\n  \"email\": \"{{USER_EMAIL}}\"\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

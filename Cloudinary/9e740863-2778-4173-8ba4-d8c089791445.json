@@ -1,0 +1,25 @@
+{
+  "name": "Ping Check",
+  "request": {
+    "type": "http",
+    "url": "{{CLOUDINARY_BASE_URL}}/{{CLOUDINARY_CLOUD_NAME}}/ping",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [],
+    "headers": [],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "BASIC_AUTH",
+      "authConfigStore": {
+        "BASIC_AUTH": {
+          "username": "{{CLOUDINARY_API_KEY}}",
+          "password": "{{CLOUDINARY_API_SECRET}}"
+        }
+      }
+    }
+  }
+}

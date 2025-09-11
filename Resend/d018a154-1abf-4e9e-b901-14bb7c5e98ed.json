@@ -1,0 +1,27 @@
+{
+  "name": "Retrieve Email",
+  "request": {
+    "type": "http",
+    "url": "{{BASE_URL}}/emails/{{EMAIL_IDENTIFIER}}",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [],
+    "headers": [
+      {
+        "key": "Authorization",
+        "value": "Bearer {{API_KEY}}",
+        "id": 0.24132604442527095,
+        "isEnabled": true
+      }
+    ],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

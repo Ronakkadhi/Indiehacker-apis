@@ -1,0 +1,32 @@
+{
+  "name": "Check user",
+  "request": {
+    "type": "http",
+    "url": "{{ONESIGNAL_BASE_URL}}/apps/{{ONESIGNAL_APP_ID}}/users/by/external_id/{{USER_EXTERNAL_ID}}",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757515576222,
+        "key": "Authorization",
+        "value": "Basic {{ONESIGNAL_API_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "body": null,
+    "bodyContainer": {
+      "text": "{\n  \"identity\": {\n    \"external_id\": \"{{USER_EXTERNAL_ID}}\"\n  },\n  \"properties\": {\n    \"language\": \"en\",\n    \"timezone_id\": \"America/Los_Angeles\"\n  },\n  \"subscriptions\": [\n    {\n      \"type\": \"AndroidPush\", \n      \"token\": \"test@gmail.com\",\n      \"enabled\": true\n    }\n  ]\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

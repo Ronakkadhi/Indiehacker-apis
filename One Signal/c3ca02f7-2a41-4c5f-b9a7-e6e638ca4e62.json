@@ -1,0 +1,38 @@
+{
+  "name": "Push Notification",
+  "request": {
+    "type": "http",
+    "url": "{{ONESIGNAL_BASE_URL}}/notifications",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757515576222,
+        "key": "Authorization",
+        "value": "Basic {{ONESIGNAL_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757515590993,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"app_id\": \"{{ONESIGNAL_APP_ID}}\",\n  \"included_segments\": [\"Subscribed Users\"],\n  \"headings\": {\n    \"en\": \"{{NOTIFICATION_TITLE}}\"\n  },\n  \"contents\": {\n    \"en\": \"{{NOTIFICATION_MESSAGE}}\"\n  }\n}",
+    "bodyContainer": {
+      "text": "{\n  \"app_id\": \"{{ONESIGNAL_APP_ID}}\",\n  \"included_segments\": [\"Subscribed Users\"],\n  \"headings\": {\n    \"en\": \"{{NOTIFICATION_TITLE}}\"\n  },\n  \"contents\": {\n    \"en\": \"{{NOTIFICATION_MESSAGE}}\"\n  }\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

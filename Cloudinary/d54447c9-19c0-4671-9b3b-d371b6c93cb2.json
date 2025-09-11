@@ -1,0 +1,94 @@
+{
+  "name": "Generate Text Image",
+  "request": {
+    "type": "http",
+    "url": "{{CLOUDINARY_BASE_URL}}/{{CLOUDINARY_CLOUD_NAME}}/{{RESOURCE_TYPE}}/text",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757449373874,
+        "key": "Content-Type",
+        "value": "application/x-www-form-urlencoded",
+        "isEnabled": true
+      }
+    ],
+    "body": [
+      {
+        "id": 1757449386935,
+        "key": "text",
+        "value": "test",
+        "isEnabled": true
+      },
+      {
+        "id": 1757449405993,
+        "key": "public_id",
+        "value": "{{PUBLIC_ID}}-text",
+        "isEnabled": true
+      },
+      {
+        "id": 1757449421519,
+        "key": "api_key",
+        "value": "{{CLOUDINARY_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757449440885,
+        "key": "timestamp",
+        "value": "{{TIMESTAMP}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757449461486,
+        "key": "signature",
+        "value": "{{GENERATE_IMAGE_SIGNATURE}}",
+        "isEnabled": true
+      }
+    ],
+    "bodyContainer": {
+      "text": "",
+      "form": [
+        {
+          "id": 1757449386935,
+          "key": "text",
+          "value": "test",
+          "isEnabled": true
+        },
+        {
+          "id": 1757449405993,
+          "key": "public_id",
+          "value": "{{PUBLIC_ID}}-text",
+          "isEnabled": true
+        },
+        {
+          "id": 1757449421519,
+          "key": "api_key",
+          "value": "{{CLOUDINARY_API_KEY}}",
+          "isEnabled": true
+        },
+        {
+          "id": 1757449440885,
+          "key": "timestamp",
+          "value": "{{TIMESTAMP}}",
+          "isEnabled": true
+        },
+        {
+          "id": 1757449461486,
+          "key": "signature",
+          "value": "{{GENERATE_IMAGE_SIGNATURE}}",
+          "isEnabled": true
+        }
+      ],
+      "multipartForm": []
+    },
+    "contentType": "application/x-www-form-urlencoded",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

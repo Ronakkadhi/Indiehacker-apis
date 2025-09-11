@@ -1,0 +1,39 @@
+{
+  "name": "Delete Record",
+  "request": {
+    "type": "http",
+    "url": "https://{{APPLICATION_ID}}.algolia.net/1/indexes/{{ALGOLIA_INDEX_NAME}}/test-record-123",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "DELETE",
+    "queryParams": [],
+    "headers": [
+      {
+        "key": "accept",
+        "value": "application/json",
+        "id": 0.8689282678769636,
+        "isEnabled": true
+      },
+      {
+        "key": "x-algolia-api-key",
+        "value": "{{ALGOLIA_API_KEY}}",
+        "id": 0.34935942502262396,
+        "isEnabled": true
+      },
+      {
+        "key": "x-algolia-application-id",
+        "value": "{{APPLICATION_ID}}",
+        "id": 0.9992225732726527,
+        "isEnabled": true
+      }
+    ],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

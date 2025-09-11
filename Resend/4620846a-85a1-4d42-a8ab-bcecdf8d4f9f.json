@@ -1,0 +1,38 @@
+{
+  "name": "Update Email",
+  "request": {
+    "type": "http",
+    "url": "{{BASE_URL}}/emails/{{EMAIL_IDENTIFIER}}",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "PATCH",
+    "queryParams": [],
+    "headers": [
+      {
+        "key": "Authorization",
+        "value": "Bearer {{API_KEY}}",
+        "id": 0.6121396363857519,
+        "isEnabled": true
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json",
+        "id": 0.012836161956884418,
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"scheduled_at\":\"2024-08-05T11:52:01.858Z\"\n}",
+    "bodyContainer": {
+      "text": "{\n  \"scheduled_at\":\"2024-08-05T11:52:01.858Z\"\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

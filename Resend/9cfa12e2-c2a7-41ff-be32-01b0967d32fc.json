@@ -1,0 +1,38 @@
+{
+  "name": "Send Batch Email ",
+  "request": {
+    "type": "http",
+    "url": "{{BASE_URL}}/emails",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "key": "Authorization",
+        "value": "Bearer {{API_KEY}}",
+        "id": 0.6586646919122177,
+        "isEnabled": true
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json",
+        "id": 0.09748773382129428,
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n    \"from\": \"Acme <onboarding@resend.dev>\",\n    \"to\": [\"YOUR_EMAIL_1@gmail.com\"],\n    \"subject\": \"hello world\",\n    \"html\": \"<h1>it works!</h1>\"\n  },\n  {\n    \"from\": \"Acme <onboarding@resend.dev>\",\n    \"to\": [\"YOUR_EMAIL_2@gmail.com\"],\n    \"subject\": \"world hello\",\n    \"html\": \"<p>it works!</p>\"\n  }\n",
+    "bodyContainer": {
+      "text": "{\n    \"from\": \"Acme <onboarding@resend.dev>\",\n    \"to\": [\"YOUR_EMAIL_1@gmail.com\"],\n    \"subject\": \"hello world\",\n    \"html\": \"<h1>it works!</h1>\"\n  },\n  {\n    \"from\": \"Acme <onboarding@resend.dev>\",\n    \"to\": [\"YOUR_EMAIL_2@gmail.com\"],\n    \"subject\": \"world hello\",\n    \"html\": \"<p>it works!</p>\"\n  }\n",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

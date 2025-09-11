@@ -1,0 +1,25 @@
+{
+  "name": "List Available Phone Number",
+  "request": {
+    "type": "http",
+    "url": "{{TWILIO_BASE_URL}}/Accounts/{{TWILIO_ACCOUNT_SID}}/AvailablePhoneNumbers/US/Local.json",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [],
+    "headers": [],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "BASIC_AUTH",
+      "authConfigStore": {
+        "BASIC_AUTH": {
+          "username": "{{TWILIO_ACCOUNT_SID}}",
+          "password": "{{TWILIO_AUTH_TOKEN}}"
+        }
+      }
+    }
+  }
+}

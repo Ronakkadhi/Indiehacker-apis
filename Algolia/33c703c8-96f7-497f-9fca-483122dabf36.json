@@ -1,0 +1,46 @@
+{
+  "name": "Get Record",
+  "request": {
+    "type": "http",
+    "url": "https://{{APPLICATION_ID}}.algolia.net/1/indexes/{{ALGOLIA_INDEX_NAME}}/New-Test-Movie",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [
+      {
+        "id": 0.042227891611254176,
+        "key": "attributesToRetrieve",
+        "value": "lorem",
+        "isEnabled": true
+      }
+    ],
+    "headers": [
+      {
+        "key": "accept",
+        "value": "application/json",
+        "id": 0.7595935043015827,
+        "isEnabled": true
+      },
+      {
+        "key": "x-algolia-api-key",
+        "value": "{{ALGOLIA_API_KEY}}",
+        "id": 0.030174717783805427,
+        "isEnabled": true
+      },
+      {
+        "key": "x-algolia-application-id",
+        "value": "{{APPLICATION_ID}}",
+        "id": 0.46632763122831045,
+        "isEnabled": true
+      }
+    ],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

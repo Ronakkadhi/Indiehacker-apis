@@ -1,0 +1,38 @@
+{
+  "name": "Update Incident",
+  "request": {
+    "type": "http",
+    "url": "{{INSTATUS_BASE_URL}}/v1/{{PAGE_ID}}/incidents/{{INCIDENT_ID}}",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757512049813,
+        "key": "Authorization",
+        "value": "Bearer {{INSTATUS_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757512069255,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"status\": \"RESOLVED\",\n  \"message\": \"Issue has been resolved\"\n}",
+    "bodyContainer": {
+      "text": "{\n  \"status\": \"RESOLVED\",\n  \"message\": \"Issue has been resolved\"\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

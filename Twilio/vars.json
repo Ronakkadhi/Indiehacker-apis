@@ -1,0 +1,44 @@
+{
+  "TWILIO_ACCOUNT_SID": {
+    "value": "YOUR_ACCOUNT_SID",
+    "type": "string",
+    "id": 0,
+    "isSecret": false
+  },
+  "TWILIO_AUTH_TOKEN": {
+    "value": "YOUR_AUTH_TOKEN",
+    "type": "string",
+    "id": 1,
+    "isSecret": false
+  },
+  "TWILIO_BASE_URL": {
+    "value": "https://api.twilio.com/2010-04-01",
+    "type": "string",
+    "id": 2,
+    "isSecret": false
+  },
+  "TWILIO_PHONE_NUMBER": {
+    "value": "YOUR_TWILIO_NUMBER",
+    "type": "string",
+    "id": 3,
+    "isSecret": false
+  },
+  "TO_PHONE_NUMBER": {
+    "value": "TO_TWILIO_NUMER",
+    "type": "string",
+    "id": 4,
+    "isSecret": false
+  },
+  "SMS_MESSAGE": {
+    "value": "Hello from Twilio API!",
+    "type": "string",
+    "id": 5,
+    "isSecret": false
+  },
+  "MESSAGE_SID": {
+    "value": "SMS_SID",
+    "type": "string",
+    "id": 6,
+    "isSecret": false
+  }
+}

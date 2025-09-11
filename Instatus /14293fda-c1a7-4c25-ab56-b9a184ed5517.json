@@ -1,0 +1,27 @@
+{
+  "name": "Delete Incident",
+  "request": {
+    "type": "http",
+    "url": "{{INSTATUS_BASE_URL}}/v1/{{PAGE_ID}}/incidents/{{INCIDENT_ID}}",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "DELETE",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757513395729,
+        "key": "Authorization",
+        "value": "Bearer {{INSTATUS_API_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

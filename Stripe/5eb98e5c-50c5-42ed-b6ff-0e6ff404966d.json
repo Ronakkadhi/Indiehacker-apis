@@ -1,0 +1,76 @@
+{
+  "name": "Update Customer",
+  "request": {
+    "type": "http",
+    "url": "{{STRIPE_BASE_URL}}/customers/{{CUSTOMER_ID}}",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757440137803,
+        "key": "Authorization",
+        "value": "Bearer {{STRIPE_SECRET_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757440232489,
+        "key": "Content-Type",
+        "value": "application/x-www-form-urlencoded",
+        "isEnabled": true
+      }
+    ],
+    "body": [
+      {
+        "id": 1757440246530,
+        "key": "metadata[order_id]",
+        "value": "6735",
+        "isEnabled": true
+      },
+      {
+        "id": 1757440271661,
+        "key": "name",
+        "value": "Updated customer name",
+        "isEnabled": true
+      },
+      {
+        "id": 1757440297429,
+        "key": "description",
+        "value": "Updated via API collection ",
+        "isEnabled": true
+      }
+    ],
+    "bodyContainer": {
+      "text": "",
+      "form": [
+        {
+          "id": 1757440246530,
+          "key": "metadata[order_id]",
+          "value": "6735",
+          "isEnabled": true
+        },
+        {
+          "id": 1757440271661,
+          "key": "name",
+          "value": "Updated customer name",
+          "isEnabled": true
+        },
+        {
+          "id": 1757440297429,
+          "key": "description",
+          "value": "Updated via API collection ",
+          "isEnabled": true
+        }
+      ],
+      "multipartForm": []
+    },
+    "contentType": "application/x-www-form-urlencoded",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

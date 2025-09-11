@@ -1,0 +1,76 @@
+{
+  "name": "Create Refund",
+  "request": {
+    "type": "http",
+    "url": "{{STRIPE_BASE_URL}}/refunds",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757440137798,
+        "key": "Authorization",
+        "value": "Bearer {{STRIPE_SECRET_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757440376888,
+        "key": "Content-Type",
+        "value": "application/x-www-form-urlencoded",
+        "isEnabled": true
+      }
+    ],
+    "body": [
+      {
+        "id": 1757440391572,
+        "key": "payment_intent",
+        "value": "{{PAYMENT_INTENT_ID}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757440404063,
+        "key": "amount",
+        "value": "1000",
+        "isEnabled": true
+      },
+      {
+        "id": 1757440423162,
+        "key": "reason",
+        "value": "requested_by_customer",
+        "isEnabled": true
+      }
+    ],
+    "bodyContainer": {
+      "text": "",
+      "form": [
+        {
+          "id": 1757440391572,
+          "key": "payment_intent",
+          "value": "{{PAYMENT_INTENT_ID}}",
+          "isEnabled": true
+        },
+        {
+          "id": 1757440404063,
+          "key": "amount",
+          "value": "1000",
+          "isEnabled": true
+        },
+        {
+          "id": 1757440423162,
+          "key": "reason",
+          "value": "requested_by_customer",
+          "isEnabled": true
+        }
+      ],
+      "multipartForm": []
+    },
+    "contentType": "application/x-www-form-urlencoded",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

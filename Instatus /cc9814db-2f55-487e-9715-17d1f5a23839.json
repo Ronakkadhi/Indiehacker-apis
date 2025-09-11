@@ -1,0 +1,38 @@
+{
+  "name": "Post an Incident",
+  "request": {
+    "type": "http",
+    "url": "{{INSTATUS_BASE_URL}}/v1/{{PAGE_ID}}/incidents",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757512049813,
+        "key": "Authorization",
+        "value": "Bearer {{INSTATUS_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757512069255,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"name\": \"Test Incident\",\n  \"message\": \"We're investigating an issue with the Website\",\n  \"status\": \"INVESTIGATING\",\n  \"notify\": true\n}",
+    "bodyContainer": {
+      "text": "{\n  \"name\": \"Test Incident\",\n  \"message\": \"We're investigating an issue with the Website\",\n  \"status\": \"INVESTIGATING\",\n  \"notify\": true\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

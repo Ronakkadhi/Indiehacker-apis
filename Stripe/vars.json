@@ -1,0 +1,50 @@
+{
+  "STRIPE_SECRET_KEY": {
+    "value": "YOUR_SECRET_KEY",
+    "type": "string",
+    "id": 0,
+    "isSecret": false
+  },
+  "STRIPE_PUBLISHABLE_KEY": {
+    "value": "YOUR_PUBLISHABLE_KEY",
+    "type": "string",
+    "id": 1,
+    "isSecret": false
+  },
+  "STRIPE_BASE_URL": {
+    "value": "https://api.stripe.com/v1",
+    "type": "string",
+    "id": 2,
+    "isSecret": false
+  },
+  "CUSTOMER_EMAIL": {
+    "value": "CUSTOMER_EMAIL",
+    "type": "string",
+    "id": 3,
+    "isSecret": false
+  },
+  "PAYMENT_AMOUNT": {
+    "value": "AMOUNT",
+    "type": "string",
+    "id": 4,
+    "isSecret": false
+  },
+  "CURRENCY": {
+    "value": "USD",
+    "type": "string",
+    "id": 5,
+    "isSecret": false
+  },
+  "PAYMENT_INTENT_ID": {
+    "value": "YOUR_PAYMENT_ID",
+    "type": "string",
+    "id": 6,
+    "isSecret": false
+  },
+  "CUSTOMER_ID": {
+    "value": "ENTER_CUSTOMER_ID",
+    "type": "string",
+    "id": 7,
+    "isSecret": false
+  }
+}

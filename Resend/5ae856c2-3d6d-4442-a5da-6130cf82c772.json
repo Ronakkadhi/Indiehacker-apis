@@ -1,0 +1,38 @@
+{
+  "name": "Create Audience",
+  "request": {
+    "type": "http",
+    "url": "{{BASE_URL}}/audiences",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757451821351,
+        "key": "Authorization",
+        "value": "Bearer {{API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757451836967,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"name\": \"Registered Users\"\n}",
+    "bodyContainer": {
+      "text": "{\n  \"name\": \"Registered Users\"\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

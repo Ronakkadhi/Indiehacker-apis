@@ -1,0 +1,39 @@
+{
+  "name": "Get User",
+  "request": {
+    "type": "http",
+    "url": "{{SUPABASE_URL}}/auth/v1/user",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757420345016,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      },
+      {
+        "id": 1757420360657,
+        "key": "apikey",
+        "value": "{{SUPABASE_ANON_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757421316508,
+        "key": "Authorization",
+        "value": "Bearer {{ACCESS_TOKEN}}",
+        "isEnabled": true
+      }
+    ],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

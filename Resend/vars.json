@@ -1,0 +1,26 @@
+{
+  "BASE_URL": {
+    "value": "https://api.resend.com",
+    "type": "string",
+    "id": 0,
+    "isSecret": false
+  },
+  "API_KEY": {
+    "value": "YOUR_API_KEY",
+    "type": "string",
+    "id": 1,
+    "isSecret": false
+  },
+  "EMAIL_IDENTIFIER": {
+    "value": "ID_GENERATED_BY_SEND_EMAIL",
+    "type": "string",
+    "id": 2,
+    "isSecret": false
+  },
+  "NEW_AUDIENCE_ID": {
+    "value": "NEW_AUDIENCE_ID",
+    "type": "string",
+    "id": 3,
+    "isSecret": false
+  }
+}

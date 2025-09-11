@@ -1,0 +1,82 @@
+{
+  "name": "Delete File",
+  "request": {
+    "type": "http",
+    "url": "{{CLOUDINARY_BASE_URL}}/{{CLOUDINARY_CLOUD_NAME}}/{{RESOURCE_TYPE}}/destroy",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757449142909,
+        "key": "Content-Type",
+        "value": "application/x-www-form-urlencoded",
+        "isEnabled": true
+      }
+    ],
+    "body": [
+      {
+        "id": 1757449161288,
+        "key": "public_id",
+        "value": "{{PUBLIC_ID}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757449176258,
+        "key": "api_key",
+        "value": "{{CLOUDINARY_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757449185524,
+        "key": "timestamp",
+        "value": "{{TIMESTAMP}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757449195473,
+        "key": "signature",
+        "value": "{{FILE_SIGNATURE}}",
+        "isEnabled": true
+      }
+    ],
+    "bodyContainer": {
+      "text": "",
+      "form": [
+        {
+          "id": 1757449161288,
+          "key": "public_id",
+          "value": "{{PUBLIC_ID}}",
+          "isEnabled": true
+        },
+        {
+          "id": 1757449176258,
+          "key": "api_key",
+          "value": "{{CLOUDINARY_API_KEY}}",
+          "isEnabled": true
+        },
+        {
+          "id": 1757449185524,
+          "key": "timestamp",
+          "value": "{{TIMESTAMP}}",
+          "isEnabled": true
+        },
+        {
+          "id": 1757449195473,
+          "key": "signature",
+          "value": "{{FILE_SIGNATURE}}",
+          "isEnabled": true
+        }
+      ],
+      "multipartForm": []
+    },
+    "contentType": "application/x-www-form-urlencoded",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

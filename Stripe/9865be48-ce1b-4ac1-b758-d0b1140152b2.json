@@ -1,0 +1,27 @@
+{
+  "name": "Get Payment Status",
+  "request": {
+    "type": "http",
+    "url": "{{STRIPE_BASE_URL}}/payment_intents/{{PAYMENT_INTENT_ID}}",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757437233493,
+        "key": "Authorization",
+        "value": "Bearer {{STRIPE_SECRET_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

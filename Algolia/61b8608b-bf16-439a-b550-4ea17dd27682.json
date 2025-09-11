@@ -1,0 +1,50 @@
+{
+  "name": "Search Index",
+  "request": {
+    "type": "http",
+    "url": "https://{{APPLICATION_ID}}.algolia.net/1/indexes/{{ALGOLIA_INDEX_NAME}}/query",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "key": "accept",
+        "value": "application/json",
+        "id": 0.24815144579929327,
+        "isEnabled": true
+      },
+      {
+        "key": "content-type",
+        "value": "application/json",
+        "id": 0.7757372406179064,
+        "isEnabled": true
+      },
+      {
+        "key": "x-algolia-api-key",
+        "value": "{{ALGOLIA_API_KEY}}",
+        "id": 0.02740883737773503,
+        "isEnabled": true
+      },
+      {
+        "key": "x-algolia-application-id",
+        "value": "{{APPLICATION_ID}}",
+        "id": 0.754866361931761,
+        "isEnabled": true
+      }
+    ],
+    "body": "{ \"params\": \"hitsPerPage=2&getRankingInfo=1\" }\n",
+    "bodyContainer": {
+      "text": "{ \"params\": \"hitsPerPage=2&getRankingInfo=1\" }\n",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

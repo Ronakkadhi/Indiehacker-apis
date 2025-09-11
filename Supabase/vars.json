@@ -1,0 +1,32 @@
+{
+  "SUPABASE_URL": {
+    "value": "https://[your-project-ref].supabase.co",
+    "type": "string",
+    "id": 0,
+    "isSecret": false
+  },
+  "SUPABASE_ANON_KEY": {
+    "value": "YOUR_ANON_KEY_HERE",
+    "type": "string",
+    "id": 1,
+    "isSecret": false
+  },
+  "USER_EMAIL": {
+    "value": "test@example.com",
+    "type": "string",
+    "id": 2,
+    "isSecret": false
+  },
+  "USER_PASSWORD": {
+    "value": "SECUREPASSWORD124",
+    "type": "string",
+    "id": 3,
+    "isSecret": false
+  },
+  "ACCESS_TOKEN": {
+    "value": "SIGNED_IN_USER_ACCESS_TOKEN",
+    "type": "string",
+    "id": 4,
+    "isSecret": false
+  }
+}

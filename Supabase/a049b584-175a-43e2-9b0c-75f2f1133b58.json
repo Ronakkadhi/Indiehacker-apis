@@ -1,0 +1,45 @@
+{
+  "name": "Sign in",
+  "request": {
+    "type": "http",
+    "url": "{{SUPABASE_URL}}/auth/v1/token",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [
+      {
+        "id": 0.8436591434793557,
+        "key": "grant_type",
+        "value": "password",
+        "isEnabled": true
+      }
+    ],
+    "headers": [
+      {
+        "id": 1757420704510,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      },
+      {
+        "id": 1757420713856,
+        "key": "apikey",
+        "value": "{{SUPABASE_ANON_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"email\": \"{{USER_EMAIL}}\",\n  \"password\": \"{{USER_PASSWORD}}\"\n}",
+    "bodyContainer": {
+      "text": "{\n  \"email\": \"{{USER_EMAIL}}\",\n  \"password\": \"{{USER_PASSWORD}}\"\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

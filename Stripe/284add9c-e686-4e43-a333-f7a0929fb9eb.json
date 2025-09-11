@@ -1,0 +1,100 @@
+{
+  "name": "Create Payment Intent",
+  "request": {
+    "type": "http",
+    "url": "{{STRIPE_BASE_URL}}/payment_intents",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "key": "Content-Type",
+        "value": "application/x-www-form-urlencoded",
+        "id": 0.8384009882599757,
+        "isEnabled": true
+      },
+      {
+        "id": 1757425794984,
+        "key": "Authorization",
+        "value": "Bearer {{STRIPE_SECRET_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "body": [
+      {
+        "id": 1757436474285,
+        "key": "amount",
+        "value": "{{PAYMENT_AMOUNT}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757436493328,
+        "key": "currency",
+        "value": "{{CURRENCY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1757436503094,
+        "key": "payment_method_types[0]",
+        "value": "card",
+        "isEnabled": true
+      },
+      {
+        "id": 1757436519310,
+        "key": "receipt_email",
+        "value": "test@example.com",
+        "isEnabled": true
+      },
+      {
+        "id": 1757436535827,
+        "key": "description",
+        "value": "Test payment from API collection",
+        "isEnabled": true
+      }
+    ],
+    "bodyContainer": {
+      "text": "{\n  \"amount\": \"{{PAYMENT_AMOUNT}}\",\n  \"currency\": \"{{CURRENCY}}\",\n  \"payment_method_types\": [\"card\"],\n  \"receipt_email\": \"{{CUSTOMER_EMAIL}}\",\n  \"description\": \"Test payment from API collection\"\n}",
+      "form": [
+        {
+          "id": 1757436474285,
+          "key": "amount",
+          "value": "{{PAYMENT_AMOUNT}}",
+          "isEnabled": true
+        },
+        {
+          "id": 1757436493328,
+          "key": "currency",
+          "value": "{{CURRENCY}}",
+          "isEnabled": true
+        },
+        {
+          "id": 1757436503094,
+          "key": "payment_method_types[0]",
+          "value": "card",
+          "isEnabled": true
+        },
+        {
+          "id": 1757436519310,
+          "key": "receipt_email",
+          "value": "test@example.com",
+          "isEnabled": true
+        },
+        {
+          "id": 1757436535827,
+          "key": "description",
+          "value": "Test payment from API collection",
+          "isEnabled": true
+        }
+      ],
+      "multipartForm": []
+    },
+    "contentType": "application/x-www-form-urlencoded",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}
