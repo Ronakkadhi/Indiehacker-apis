@@ -13,7 +13,7 @@ Perfect for indie hackers, solopreneurs, and early-stage startups who want to mo
 ## Quick Start
 
 ```bash
-git clone https://github.com/yourusername/indie-hacker-api-collection.git
+git clone https://github.com/Ronakkadhi/Indiehacker-apis
 ```
 
 1. Download [Requestly Desktop App](https://requestly.io/desktop/)
