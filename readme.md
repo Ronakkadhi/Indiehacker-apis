@@ -1,6 +1,6 @@
 # Indie Hacker API Collection
 
-8 essential business APIs for indie hackers and startups. Clone, add keys, start building.
+9 essential business APIs for indie hackers and startups. Clone, add keys, start building.
 
 ## Why This Exists
 
@@ -34,6 +34,7 @@ git clone https://github.com/Ronakkadhi/Indiehacker-apis
 | **Algolia** | [Docs](https://www.algolia.com/doc/) | Search Index, Add Record, Get Record, Delete Record, List Indices | 10K records |
 | **Cloudinary** | [Docs](https://cloudinary.com/documentation) | Upload File, Delete File, Search Resource, Get Resource Details, Generate Text Image, Get Usage Stats, Ping Check | 25GB storage |
 | **Instatus** | [Docs](https://instatus.com/help/api) | Post Incident, Update Incident, Delete Incident, Get All Incidents, Create Status Page, Get Page, Delete Page | 1 status page |
+| **AgentSEO** | [Docs](https://www.agentseo.dev/docs/api-reference) | Search Results, Google AI Overview Evidence | 100 one-time live credits, no card required |
 
 ## Common Use Cases
 
