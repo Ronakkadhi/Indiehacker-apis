@@ -1,0 +1,44 @@
+{
+  "name": "Google AI Overview Evidence",
+  "request": {
+    "type": "http",
+    "url": "https://www.agentseo.dev/api/v1/ai-overview/extract",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "key": "accept",
+        "value": "application/json",
+        "id": 0.24815144579929327,
+        "isEnabled": true
+      },
+      {
+        "key": "content-type",
+        "value": "application/json",
+        "id": 0.7757372406179064,
+        "isEnabled": true
+      },
+      {
+        "key": "x-api-key",
+        "value": "{{AGENTSEO_API_KEY}}",
+        "id": 0.3,
+        "isEnabled": true
+      }
+    ],
+    "body": "{\"keyword\": \"how to fix a leak\", \"location_code\": 1026201, \"target_domain\": \"example.com\"}",
+    "bodyContainer": {
+      "text": "{\"keyword\": \"how to fix a leak\", \"location_code\": 1026201, \"target_domain\": \"example.com\"}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

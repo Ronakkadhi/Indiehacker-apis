@@ -1,0 +1,8 @@
+{
+  "AGENTSEO_API_KEY": {
+    "value": "YOUR_AGENTSEO_API_KEY",
+    "type": "string",
+    "id": 0,
+    "isSecret": true
+  }
+}

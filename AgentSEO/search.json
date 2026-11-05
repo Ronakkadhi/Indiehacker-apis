@@ -1,0 +1,44 @@
+{
+  "name": "Search Results",
+  "request": {
+    "type": "http",
+    "url": "https://www.agentseo.dev/api/v1/search",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "key": "accept",
+        "value": "application/json",
+        "id": 0.24815144579929327,
+        "isEnabled": true
+      },
+      {
+        "key": "content-type",
+        "value": "application/json",
+        "id": 0.7757372406179064,
+        "isEnabled": true
+      },
+      {
+        "key": "x-api-key",
+        "value": "{{AGENTSEO_API_KEY}}",
+        "id": 0.3,
+        "isEnabled": true
+      }
+    ],
+    "body": "{\"query\": \"best crm software\", \"limit\": 5}",
+    "bodyContainer": {
+      "text": "{\"query\": \"best crm software\", \"limit\": 5}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}
